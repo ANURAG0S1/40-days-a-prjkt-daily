@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    .full{
+        border: 1px solid #000;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .target{
+        justify-content: center;
+        display: flex;align-items: center;
+    }
+    .button{
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+    button{
+        height: 40px;
+        width: 40px;
+         background: blue;
+         border: 1px solid white;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="full">
+        <h1 class="target">0</h1>
+        <div class="button">
+            <button onclick="func('sum')">+</button>
+            <button onclick="func('sub')">-</button>
+        </div>
+    </div><script src="./script.js"></script>
+   
+</body>
+</html>
