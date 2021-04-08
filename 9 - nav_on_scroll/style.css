@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	color: rgb(0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+	font-size: 16px;
+	font-family: corbel;
+}
+
+button {
+	cursor: pointer;
+}
+nav {
+	height: 40px;
+	width: 100%;
+}
+.df {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.df li {
+	margin: 5px 10px;
+	padding: 5px 10px;
+}
+nav.basic {
+	background: rgb(39, 39, 44);
+}
+nav.scroll {
+	background: #000;
+	position: fixed;
+	top: -40px;
+	transition: 400ms;
+	transform-origin: top;
+	left: 0;
+}
