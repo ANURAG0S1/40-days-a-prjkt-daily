@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+	font-size: 16px;
+	font-family: calibri;
+}
+
+button {
+	cursor: pointer;
+}
+.main {
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+}
+.main .video {
+	position: absolute;
+	z-index: 0;
+	background: url(mel.jpg) no-repeat;
+	background-size: 100% 100%;
+	top: 0px;
+	left: 0px; /* fixed to left. Replace it by right if you want.*/
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+.button {
+	position: relative;
+	bottom: -600px;
+	height: 35px;
+	width: 80px;
+	left: 30px;
+	background: rgb(255, 255, 255);
+	border-radius: 8px;
+	z-index: 11;
+
+	border: 2px white solid;
+}
+
+.main-button {
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 255);
+}
+.main-button span#one {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	text-align: center;
+	align-items: center;
+	z-index: 10;
+	width: 100vw;
+	background: rgba(0, 0, 0, 0.781);
+}
+.bg h1 {
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.main-button span#two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+.button-slider {
+	display: flex;
+	transition: 300ms;
+	position: absolute;
+	justify-content: center;
+	border-radius: 8px;
+	border: 0 solid #000;
+	align-items: center;
+	transform: translateY(-100%) translateX(100%);
+	width: 38px;
+	background: blue;
+	height: 100%;
+}
